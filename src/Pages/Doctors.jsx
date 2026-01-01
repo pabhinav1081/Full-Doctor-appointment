@@ -1,8 +1,23 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import {useParams} from "react-router";
 
 const Doctors = () => {
+
+
+
+    const {speciality} = useParams();
+    const {doctors} = useContext(Doctors);
     return (
-        <div>Doctodfsdfs</div>
+
+        <div>
+           <p>{speciality}</p>
+            pthis
+            <div>
+               
+            </div>
+
+
+        </div>
     )
 }
 export default Doctors
